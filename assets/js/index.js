@@ -1,6 +1,7 @@
+'use strict';
 // 1) Функция которая принимает строку и возвращает количество слов в ней.
 
-const loremString = 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit';
+const loremString = 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velihgfghddfgt';
 const arrString = loremString.split(' ');
 const stringAmount= () => arrString.length;
 
@@ -16,5 +17,5 @@ const stringAmount= () => arrString.length;
 // }
 
 const stringLength = arrString.reduce (function (i, j) {
-  return i.length > j.length ? i : j;
+  return i.length > j.length ? i.length : j.length; //без use strict не работает
 })
